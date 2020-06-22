@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(11, 5, 43);
+  font-family: "Poppins", "Helvetica";
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.counter p {
+  color: white;
+  /* font-size: 10em; */
+  font-size: 13vw;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .counter p {
+    font-size: 30vw;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.counter span {
+  display: inline-flex;
+  color: white;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
