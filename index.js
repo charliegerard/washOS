@@ -3,7 +3,7 @@
 
 import { init as initBubbles, animationFunction, animate } from "./bubbles.js";
 
-const URL = "http://localhost:4000/model/";
+const URL = "https://wash-os.netlify.app/model/";
 let counterStarted = false;
 let interval;
 let paused = false;
@@ -47,8 +47,6 @@ async function init() {
       overlapFactor: 0.5, // probably want between 0.5 and 0.75. More info in README
     }
   );
-  // Stop the recognition in 5 seconds.
-  // setTimeout(() => recognizer.stopListening(), 5000);
 }
 
 init();
